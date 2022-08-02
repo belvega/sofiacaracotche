@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/logo-sofia.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@200 & Poppins & Poppins:wght@700 display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Contacto</title>
+</head>
+
+<header>
+        <a href="../index.html"> <img src="../assets/img/logo-sofia.png" alt="logo Sofía Caracotche" width="100px">  </a>
+    
+        <!--Lista desordenada para barra de navegación-->
+    <nav>
+        <ul>
+            <li><a href="../index.html"> Inicio </a></li>
+            <li><a href="./foto.html"> Foto </a></li>
+            <li><a href="./sonidoycamara.html"> Sonido y Cámara </a></li>
+            <li><a href="./edicion.html"> Edición </a></li>
+            <li><a href="./contacto.html"> Contacto </a></li>
+        </ul>    
+    </nav>
+</header>
+
+<body>
+<main>
+
+    <section class="banner"> 
+        <h1> CONTACTO</h1> 
+    </section>
+    <section class="parrafo">
+    <p> Si tenés algún proyecto y querés que forme parte del mismo, tan solo escribime aquí abajo y me pondré en contacto con vos en breves. Gracias! </p>
+    </section>
+
+<section class="formulario">
+<form action="procesar.php" name="contacto" method="post">
+        <legend>¡Hola!</legend>
+        <p>
+        <label>Nombre: 
+            <input type="text" name="nombre" placeholder="Mario" required  >
+        </label>
+        </p>
+        <p>
+        <label>Email: 
+            <input type="email" name="email" placeholder="hola@servidor.com.ar" required  >
+        </label>
+        </p>
+        <p>
+        <label>Url: 
+            <input type="url" name="url" placeholder="hola.com.ar" >
+        </label>
+        </p>
+        <p>Dejame tu comentario</p>
+        <textarea name="comentario" id="" cols="30" rows="10">
+        </textarea>
+        <p>
+        <button type="submit"> Enviar </button> 
+        </p>   
+</form>
+</section>
+
+</main>
+
+<footer id="footer">
+    <section>
+        <h4>
+            Sofía Caracotche
+            Mail: caosestable.audiovisual@gmail.com
+        </h4>
+    </section>
+    
+    <section>
+        <h5>Redes sociales</h5>
+        <div class="redessociales">
+            <img src="../assets/icons/linkedinlogo.png">    
+        <!--icono de instagram-->
+            <img src="../assets/icons/instagramlogo.png">        
+        <!--icono de youtube-->
+            <img src="../assets/icons/youtubelogo.png"> 
+        <!--icono de facebook-->   
+            <img src="../assets/icons/facebooklogo.png">
+        </div>
+    </section>
+</footer>
+
+
+</body>
+</html>

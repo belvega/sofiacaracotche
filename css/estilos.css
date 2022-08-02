@@ -1,0 +1,312 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+@import url("https://fonts.googleapis.com/css2? family=Poppins:wght@200 & Poppins & Poppins:wght@700 display=swap");
+
+
+@font-face {
+    font-family:'Poppins';
+    src: url('../assets/fonts/Poppins-ExtraLight.ttf');
+    src: url('../assets/fonts/Poppins-Bold.ttf');
+}
+
+
+h1 {
+    font-family: 'Poppins', bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+
+h2 {
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+
+h3 {
+    font-family: 'Poppins', bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+
+h4 {
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+
+h5 {
+    font-family: 'Poppins';
+    font-size: 14px;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    font-style: bold;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+
+nav {
+    margin: 0px 10px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    margin: 0px 10px;
+    color: black;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+}
+
+
+#footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color: beige;
+    
+}
+
+.redessociales{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 4fr);
+    justify-items: center;
+}
+
+.redessociales img {
+    width: 40px;
+    height: 40px;
+}
+
+/*banner igual para las 5 secciones*/
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.banner img {
+    display: flex;
+    align-items: center;
+}
+
+.parrafo {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.parrafo p {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/*fotos del index*/
+
+.quiensoy__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto__contenedor {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.texto__contenedor p {
+    font-size: 1.5rem;
+}
+
+.ifoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ifoto img {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+.pictures__container {
+    display: flex;
+    justify-content: center;
+}
+
+.pictureplustext__container {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.pictureplustext__container p {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.videos iframe {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 550px;
+    height: 350px;
+}
+
+.video__container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*fotos de FOTO*/
+
+.ffoto {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.ffoto img{
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    width: 1500px ;
+    height: 1100px;
+}
+
+
+/*formulario de contacto*/
+
+.formulario{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.formulario form{
+    display: flex;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 1px solid;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    font-family: 'poppins';
+}
+
+.formulario form button {
+    width: 70px;
+    height: 25px;
+    align-items: center;
+    color: blue;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.formulario form textarea{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.formulario form input{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/*tablet media queries*/
+/*@media only screen and (max-width: 768px){
+}*/
+
+/*mobile media queries*/
+@media only screen and (max-width: 576px){
+
+/*estilos generales*/
+header {
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* contenedor general*/
+.banner{
+    flex-direction: column;
+}
+
+/*contenedor imagenes index*/
+.ifoto{
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+}
+
+/*contenedor general para todos los videos*/
+.videos iframe{
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+}
+
+/*contenedor imagenes fotografia*/
+.ffoto{
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+}
+
+/*formulario de contacto*/
+.formulario{
+    flex-direction: column;
+    align-items: center;
+}
+
+}
