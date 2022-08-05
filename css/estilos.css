@@ -52,41 +52,21 @@ h5 {
     text-align: center;
 }
 
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
+header{
+    position: sticky;
+    top: 0;
 }
 
-
-ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    font-family: sans-serif;
-    font-style: bold;
-}
-
-
-ul{
-    list-style-type: none;
-}
-
-
-nav {
-    margin: 0px 10px;
-}
-
-
-nav ul li a {
-    text-decoration: none;
-    margin: 0px 10px;
+.navbar-light .navbar-nav .nav-link {
     color: black;
-    font-family: 'Poppins';
-    text-transform: uppercase;
+}
+
+.navbar-collapse {
+    flex-grow: inherit;
+}
+
+.navbar{
+background-color: white;
 }
 
 
@@ -109,7 +89,9 @@ nav ul li a {
     width: 40px;
     height: 40px;
 }
-
+.i{
+    font-size: 1.2rem;
+}
 /*banner igual para las 5 secciones*/
 
 .banner {
