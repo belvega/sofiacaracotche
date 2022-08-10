@@ -69,7 +69,6 @@ header{
 background-color: white;
 }
 
-
 #footer{
     width: 100%;
     height: 200px;
@@ -104,59 +103,46 @@ li {
     justify-content: space-around;
 }
 
+.banner{ 
+        animation-duration: 3s;
+        animation-name: moving;
+}
+
+@keyframes moving {
+        from{
+            margin-left: 100%;
+            width: 300%
+        }
+        to{
+        margin-left: 0%;
+        width: 100%;
+        }
+}
 
 .banner img {
     display: flex;
     align-items: center;
+    width: 800px;
+    height: 500px;
 }
 
-.parrafo {
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
-
-.parrafo p {
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    margin-left: 10px;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-/*fotos del index*/
 
 .quiensoy__contenedor {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    align-items: center;
-    padding: 50px;
+    margin-left: 20px;
+    padding: 20px 20px;
 }
-
-/*.texto__contenedor {
+.quiensoy__foto{
     display: flex;
-    align-items: center;
-}*/
-
-/*.texto__contenedor p {
-    font-size: 1.5rem;
-    padding: 20px;
-    
-}
-*/
-
-/*.pictures {
-    display: flex;
+    align-items: center; 
     flex-direction: column;
-    align-items: center;
-}*/
-
-.pictures img {
-    display: flex;
+}
+.quiensoy__foto img{
+    width: 700px;
+    height: 500px;
     justify-content: center;
-    padding: 10px 10px;
 }
 
 .pictures__container {
@@ -175,23 +161,37 @@ li {
     font-size: 1.5rem;
 }
 
-.videos {
-    display: flex;
+.videocontainer {
     justify-content: center;
-    padding: 20px;
+    display: inline-flex;
+    align-content: center;
+    padding-left: 10px;
 }
 
-.videos iframe {
+.videocontainer iframe {
     display: flex;
     justify-content: center;
-    padding: 20px;
-    width: 550px;
+    align-items: center;
+    padding: 10px 10px;
+    width: 500px;
     height: 350px;
+
 }
 
-.video__container {
+/* aqui empiezan las secciones*/
+
+.parrafo {
     display: flex;
-    flex-direction: column;
+}
+
+.parrafo p {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 
@@ -199,18 +199,18 @@ li {
 
 .ffoto {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-left: 10px;
+    margin-left: 20px;
+
 }
 
 .ffoto img{
-    display: flex;
-    justify-content: center;
-    padding: 20px 20px;
-    width: 1500px ;
-    height: 950px;
+    display:flex;
+    padding: 20px;
+    width: 550px ;
+    height: 400px;
 }
-
 
 /*formulario de contacto*/
 
@@ -267,26 +267,22 @@ header {
 
 }
 
-/* contenedor general*/
 .banner{
     flex-direction: column;
+    align-items: center;
 }
 
-/*contenedor imagenes index*/
-/*.pictures{
-    flex-direction: column;
-    width: 400px;
-    align-items: center;
-}*/
 .quiensoy__contenedor{
     flex-direction: column;
     align-items: center;
+    width: 400px;
 }
 
-.texto__contenedor{
+.quiensoy__foto{
     flex-direction: column;
     align-items: center;
 }
+
 
 .pictures__container{
     flex-direction: column;
@@ -297,14 +293,18 @@ header {
     flex-direction: column;
     align-items: center;
 }
-/*contenedor general para todos los videos*/
-.videos{
+
+.videocontainer{
     flex-direction: column;
+    align-items: center;
     width: 400px;
+}
+
+.parrafo{
+    flex-direction: column;
     align-items: center;
 }
 
-/*contenedor imagenes fotografia*/
 .ffoto{
     flex-direction: column;
     width: 400px;
@@ -313,6 +313,11 @@ header {
 
 /*formulario de contacto*/
 .formulario{
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer{
     flex-direction: column;
     align-items: center;
 }
