@@ -1,0 +1,328 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+$estilos: (
+    navegacion: black,
+    barra: white,
+);
+
+@import url("https://fonts.googleapis.com/css2? family=Poppins:wght@200 & Poppins & Poppins:wght@700 display=swap");
+
+@font-face {
+    font-family:'Poppins';
+    src: url('../assets/fonts/Poppins-ExtraLight.ttf');
+    src: url('../assets/fonts/Poppins-Bold.ttf');
+}
+
+h1 {
+    font-family: 'Poppins', bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+h3 {
+    font-family: 'Poppins', bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: map-get($estilos, navegacion);
+}
+
+.navbar-collapse {
+    flex-grow: inherit;
+}
+
+.navbar{
+background-color: map-get($estilos, barra);
+}
+
+#footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    
+}
+
+.redessociales{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 4fr);
+    justify-items: center;
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+i{
+    font-size: 2rem;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: space-around;   
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner{ 
+        animation-duration: 3s;
+        animation-name: moving;
+}
+
+@keyframes moving {
+        from{
+            margin-left: 100%;
+            width: 300%
+        }
+        to{
+        margin-left: 0%;
+        width: 100%;
+        }
+}
+
+.quiensoy__contenedor {
+    display: flex;
+    align-items: center;
+    margin-left: 50px 10px;
+    padding: 20px;
+}
+.quiensoy__foto{
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+}
+.quiensoy__foto img{
+    width: 700px;
+    height: 500px;
+    justify-content: center;
+}
+
+.quiensoy__foto p {
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+.pictures__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pictureplustext__container {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    p {
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+}
+
+.videocontainer {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin iframe-size ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+.videocontainer iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    @include iframe-size(500px,350px )
+}
+
+.parrafo {
+    display: flex;
+    p {
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        margin-left: 10px;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+    }
+}
+
+/*fotos de FOTO*/
+
+.ffoto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 20px;
+    img{
+        display:flex;
+        padding: 20px;
+        width: 550px ;
+        height: 400px;
+    }
+}
+
+/*formulario de contacto*/
+
+.formulario{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.formulario form{
+    display: flex;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 1px solid;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    font-family: 'poppins';
+}
+
+.formulario form button {
+    width: 70px;
+    height: 25px;
+    align-items: center;
+    color: blue;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.formulario form textarea{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.formulario form input{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/*tablet media queries*/
+/*@media only screen and (max-width: 768px){
+}*/
+
+/*mobile media queries*/
+@media only screen and (max-width: 576px){
+
+/*estilos generales*/
+header {
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.banner{
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner img {
+    width: 500px;
+}
+
+.quiensoy__contenedor{
+    flex-direction: column;
+    align-items: center;
+}
+
+.quiensoy__contenedor img {
+    width: 500px;
+}
+.quiensoy__foto{
+    flex-direction: column;
+    align-items: center;
+}
+
+.pictures__container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.pictures__container img {
+    width: 500px;
+    padding: 10px 10px;
+}
+
+.pictureplustext__container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.pictureplustext__container img {
+    width: 500px;
+    padding: 10px 10px;
+}
+
+.videocontainer{
+    flex-direction: column;
+    align-items: center;
+}
+
+.parrafo{
+    flex-direction: column;
+    align-items: center;
+}
+
+.ffoto{
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+}
+
+/*formulario de contacto*/
+.formulario{
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer{
+    flex-direction: column;
+    align-items: center;
+}
+
+.redessociales {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 4fr);
+    justify-items: center;
+    text-decoration: none;
+}
+
+}
